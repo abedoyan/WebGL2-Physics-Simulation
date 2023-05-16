@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!-- saved from url=(0062)https://cs418.cs.illinois.edu/website/files/cs418-terrain.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>MP5 Burst - Arda Bedoyan</title>
+    <script src="math.js"></script>
+    <script src="scene-option-tree.js"></script><!-- handles controls -->
+    <script src="mp5_burst_v2.js"></script>
+
+
+<script>// configures controls
+    /**
+    * Modify this object to chose what options you want in the control pane.
+    * Top-level entries become top-section radio buttons.
+    * Nested entries become lower-section inputs of various types.
+    */
+    var controlOptions =
+        {"burst":
+            {"label":"Burst: Particle Effects with Spheres"
+            ,"options":
+              {"particles":{"type":"number","default":50,"label":" Number of Spheres"}
+              }
+            }
+        }
+</script>
+
+
+<!-- DO NOT MODIFY anything below this line -->
+<style>
+    body { margin: 0; border: none; padding: 0; display: flex; }
+    .controls {
+        width: min(50%, 20em); padding: 1em;
+        flex: 0 0 min(50%, 20em);
+    }
+    .controls label { display: block; }
+    .display {
+        flex-grow: 1; height: 100vh;
+        line-height: 0rem;
+    }
+</style>
+</head>
+<body style="margin: 0px;">
+    <div class="controls">
+        <form>
+        <div id="set1"></div>
+        <hr>
+        <div id="set2"></div>
+        <hr>
+        <input type="submit" value="Generate object">
+        </form>
+    </div>
+    <div class="display"><canvas width="928" height="608" id='canvas' style></canvas></div>
+    <div id="fps" style="position:fixed; top:40px; right:50px; display:table; color:rgb(20, 221, 20); font-weight:bold; font-size:24px"></div>
+  
+</body>
+</html>

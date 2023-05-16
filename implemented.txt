@@ -1,0 +1,5 @@
+FPS
+Sphere-sphere collisions
+Variable radii
+Variable mass
+Efficient collision detection
